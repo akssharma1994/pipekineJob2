@@ -8,7 +8,7 @@ pipeline{
     stages{
         stage("Adding a script file"){
             steps{
-                readTrusted 'addition.sh'
+                checkout "SCM"
                 sh "chmod +x -R ${env.WORKSPACE}"
                 sh ("./addition.sh")
             }
