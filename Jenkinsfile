@@ -9,7 +9,7 @@ pipeline{
         stage("Adding a script file"){
             steps{
                 readTrusted 'addition.sh'
-                sh ('addition.sh')
+                sh ("./addition.sh")
             }
         }   
     }
