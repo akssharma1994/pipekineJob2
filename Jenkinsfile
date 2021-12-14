@@ -9,13 +9,8 @@ pipeline{
         stage("Adding a script file"){
             steps{
                 readTrusted 'addition.sh'
-            }
-        }
-        stage("executing shell script "){
-            steps{
                 sh 'addition.sh'
             }
-        }    
+        }   
     }
-  
 }
