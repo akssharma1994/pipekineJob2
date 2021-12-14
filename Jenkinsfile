@@ -9,7 +9,7 @@ pipeline{
         stage("Adding a script file"){
             steps{
                 sh "chmod +x -R ${env.WORKSPACE}"
-                sh 'addition.sh'
+                sh "addition.sh"
             }
         }   
     }
